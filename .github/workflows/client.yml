@@ -25,4 +25,4 @@ jobs:
             --region ap-northeast-2 \
             build s3://chat-app-seyun \
             --delete
-        working-directory: ./my-agora-states-client
+        working-directory: ./
