@@ -25,6 +25,6 @@ jobs:
         run: echo "BUCKET_NAME=${{ vars.S3_BUCKET_NAME }}" >> $GITHUB_ENV
 
       # 4. s3에 업로드
-      - name: Upload page files to S3
+      - name: Upload page files and  to S3
         run: |
-          aws s3 sync --region ap-northeast-2 build s3://$BUCKET_NAME --delete
+          aws s3 sync --region ap-northeast-2 . s3://$BUCKET_NAME
