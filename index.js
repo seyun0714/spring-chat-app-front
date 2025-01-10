@@ -27,6 +27,7 @@ function startChat() {
 
 function connectServer(userId){
     socket = new WebSocket('ws://localhost:8080/ws/chat');
+    // ip 변경
 
     socket.onopen = () => {
         console.log('서버와 연결됨');
